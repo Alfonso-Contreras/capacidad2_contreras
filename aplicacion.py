@@ -29,13 +29,12 @@ def eliminar():
 def agregar():
     print("--Agregar datos a un archivo")
     archivo=input("Archivo: ")
-    archivo=input("Archivo")
     contenido=input("contenido: ")
     gestion_archivos.agregar_contenido_archivo(archivo, contenido)
 
 def listar():
     print("--Mostrar contenido de un archivo--")
-    archivo=input("Archivo")
+    archivo=input("Archivo: ")
     print(gestion_archivos.leer_archivo(archivo))
     
 def salir():
